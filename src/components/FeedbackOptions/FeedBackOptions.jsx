@@ -7,8 +7,8 @@ import {
 const FeedbackOptions = ({ options, onLeaveFeedback }) => {
   return (
     <FeedbackOptionsList>
-      {options.map((option, idx) => (
-        <li key={idx}>
+      {options.map((option) => (
+        <li key={option}>
           <FeedbackOptionsButton onClick={() => onLeaveFeedback(option)}>
             {option[0].toUpperCase() + option.slice(1, option.length)}
           </FeedbackOptionsButton>
